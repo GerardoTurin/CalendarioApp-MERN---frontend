@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 //import { addHours } from 'date-fns';
 
 /* const temporalEvents = {
-    _id: new Date().getTime(),
+    id: new Date().getTime(),
     title: 'Mi Cumpleaños',
     notes: 'Comprar el pastel',
     start: new Date(),

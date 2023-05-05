@@ -20,11 +20,11 @@ const useUiStore = () => {
 
 
     // toogleModal
-    /* const toogleModal = () => {
+    const toogleModal = () => {
         ( isDateModalOpen ) 
             ? dispatch( onCloseDateModal() ) 
             : dispatch( onOpenDateModal() );
-    }; */
+    };
 
 
     return {
@@ -35,7 +35,7 @@ const useUiStore = () => {
         // Métodos
         openModal,
         closeModal,
-        //toogleModal,
+        toogleModal,
     };
 };
 

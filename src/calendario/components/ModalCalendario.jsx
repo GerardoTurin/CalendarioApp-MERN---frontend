@@ -8,6 +8,7 @@ import enUS from 'date-fns/locale/en-US';
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import { useCalendarioStore, useUiStore } from '../../hooks';
+import { getEnvVariables } from '../../helpers';
 
 
 registerLocale('es', esES);
@@ -24,8 +25,10 @@ const customStyles = {
     },
 };
 
+if ( getEnvVariables().VITE_MODE !== 'test' ) {
+    Modal.setAppElement('#root');
+}
 
-Modal.setAppElement('#root');
 
 
 

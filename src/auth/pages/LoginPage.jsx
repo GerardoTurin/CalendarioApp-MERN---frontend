@@ -30,9 +30,6 @@ const LoginPage = () => {
     const loginSubmit = (evt) => {
         evt.preventDefault();
         startLogin({ email:loginEmail, password:loginPassword });
-
-        // Limpiar formulario
-
     };
 
 

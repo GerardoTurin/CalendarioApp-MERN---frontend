@@ -11,6 +11,7 @@ const BotonDelete = () => {
 
     return (
         <button 
+            aria-label="btn-delete"
             className="btn btn-danger fab-delete boton-delete-class" 
             onClick={ deleteNota }
             style={ { display: hasEventSelected ? '' : 'none' }}

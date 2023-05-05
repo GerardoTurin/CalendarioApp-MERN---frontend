@@ -27,7 +27,9 @@ const Navbar = ({ onChangeLenguaje, lenguaje }) => {
                 <button className="btn btn-outline-danger" onClick={ startLogout }>
                     <i className="fas fa-sign-out-alt"></i>
                     &nbsp;
-                    Salir
+                    {
+                        !lenguaje ? 'Salir' : 'Logout'
+                    }
                 </button>
             </div>
         </nav>
