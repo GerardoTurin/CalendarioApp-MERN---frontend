@@ -41,7 +41,7 @@ const LoginPage = () => {
         try {
 
             if ( registerName.trim().length < 2 ) {
-                Swal.fire('Error', error.response.data.msg, 'error');
+                Swal.fire('Error', 'El nombre debe tener al menos 2 caracteres', 'error');
                 return;
             };
     
