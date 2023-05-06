@@ -14,7 +14,7 @@ const Navbar = ({ onChangeLenguaje, lenguaje }) => {
                 </span>
 
 
-                <button className="btn btn-outline-success" onClick={ onChangeLenguaje }>
+                <button className="btn btn-outline-success" aria-label="cambioIdioma" onClick={ onChangeLenguaje }>
                     <i className="fas fa-language"></i>
                     &nbsp;
                     { 
